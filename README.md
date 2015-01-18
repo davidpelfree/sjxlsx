@@ -3,6 +3,8 @@ sjxlsx - the efficient Java API for XLSX
 
 [![Build Status](https://travis-ci.org/davidpelfree/sjxlsx.svg?branch=master)](https://travis-ci.org/davidpelfree/sjxlsx)
 
+> Credit: this project was first published in Google Code: https://code.google.com/p/sjxslx/ and it seems unmaintained.  I moved it to GitHub to modernize it's development process :)
+
 It is a **simple and efficient** java tool for reading, writing and modifying XLSX. The most important purpose to code it is for performance consideration -- all the popular ones like POI sucks in both memory consuming and parse/write speed.
 
 - memory
