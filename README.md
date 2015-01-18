@@ -13,7 +13,7 @@ Microsoft XLSX use XML+zip (OOXML) to store the data. So, to be fast, sjxlsx use
 
 Sample code
 -----------
-```
+```java
 package com.incesoft.cms.util.excel;
 
 import java.io.BufferedOutputStream;
