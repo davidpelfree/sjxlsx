@@ -132,11 +132,15 @@ public class Sheet {
 							} else {
 								lastRowIndex = Integer.valueOf(reader
 										.getAttributeValue(null, "r")) - 1;
-								columnspan = Integer.valueOf(spans
-										.substring(spans.indexOf(":") + 1));
-								if (columnspan > MAX_COLUMN_SPAN) {
-									columnspan = MAX_COLUMN_SPAN;
-								}
+                                if(spans.isEmpty()){
+                                    columnspan = MAX_COLUMN_SPAN;
+                                }else {
+                                    columnspan = Integer.valueOf(spans
+                                            .substring(spans.indexOf(":") + 1));
+                                    if (columnspan > MAX_COLUMN_SPAN) {
+                                        columnspan = MAX_COLUMN_SPAN;
+                                    }
+                                }
 								ret = new Cell[columnspan];
 							}
 						} else if ("c".equals(reader.getLocalName())) {
